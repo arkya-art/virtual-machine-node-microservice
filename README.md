@@ -56,7 +56,8 @@ sudo apt install nodejs npm -y
 Verify installation:
 ```bash
 node -v
-npm -v```
+npm -v
+```
 
 
 ### 4.Deploy Microservice on VM1
@@ -66,11 +67,13 @@ Create a project directory and initialize a Node.js project:
 ```bash
 mkdir microservice
 cd microservice
-npm init -y```
+npm init -y
+```
 
 Install Express.js:
 ```bash
-npm install express```
+npm install express
+```
 
 Create server.js with the following code:
 ```javascript
@@ -84,21 +87,25 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Microservice running on http://0.0.0.0:${port}`);
-});```
+});
+```
 
 Start the server:
 ```bash
-node server.js```
+node server.js
+```
 
 ### 5.Configure Networking Between VMs
 
 On VM1, ensure the firewall allows traffic on port 3000:
 ```bash
-sudo iptables -A INPUT -p tcp --dport 3000 -j ACCEPT```
+sudo iptables -A INPUT -p tcp --dport 3000 -j ACCEPT
+```
 
 On VM2, test access to the microservice hosted on VM1:
 ```bash
-curl http://<VM1_IP>:3000/```
+curl http://<VM1_IP>:3000/
+```
 
 You should see the response: Hello from Microservice.
 
