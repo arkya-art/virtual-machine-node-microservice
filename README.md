@@ -107,13 +107,13 @@ On VM2, test access to the microservice hosted on VM1:
 curl http://<VM1_IP>:3000/
 ```
 
-You should see the response: Hello from Microservice.
+responsefrom other VM: Hello from Microservice.
 
 
-#🎉 Conclusion
+# 🎉 Conclusion
 
 This project demonstrates how to simulate a distributed system by deploying a Node.js microservice on one VM and accessing it from another VM using an internal network. It provides insight into configuring VMs, setting up networking, and deploying applications in a multi-VM environment.
 Feel free to explore the repository, fork it, and make improvements or additions! Happy coding! 😊
 
-###📜 License
+### 📜 License
 This project is licensed under the MIT License – see the LICENSE.md file for details.
