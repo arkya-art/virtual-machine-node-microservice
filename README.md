@@ -42,7 +42,7 @@ This project demonstrates the process of creating and configuring multiple Virtu
 Start by cloning the project repository:
 ```bash
 git clone https://github.com/username/repository.git
-cd repository
+cd repository```
 
 ### 2. Set Up Virtual Machines
 Create two VMs using VirtualBox.
